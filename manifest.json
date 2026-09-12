@@ -1,0 +1,17 @@
+{
+  "name": "Molly.co Yayınları",
+  "short_name": "Molly.co",
+  "description": "Çocuklar için eğlenceli masallar ve sesli hikayeler.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffae6",
+  "theme_color": "#fffae6",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/selenayykaparr/iconyellow/52146c5c0ab7e84bfe82559fa93889fb68c66ea0/icon-512-yellow.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,971 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap');
+
+/* =========================================
+   MOLLY.CO AÇILIŞ EKRANI
+   ========================================= */
+
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #fffae6;
+
+  z-index: 999999;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: mollySplash 1.15s ease forwards;
+}
+
+.splash-image {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+
+  margin: 0;
+  padding: 0;
+
+  display: block;
+
+  object-fit: fill;
+  object-position: center center;
+}
+
+@keyframes mollySplash {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  72% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+
+/* =========================================
+   TAM EKRAN UYGULAMA
+   ========================================= */
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fffae6;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #fffae6;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   UYGULAMA ANA ALANI
+   ========================================= */
+
+.phone-container {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+
+  max-width: none;
+  max-height: none;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #fffae6 !important;
+
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+
+  overflow: hidden;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BAŞLIK ALANI
+   ========================================= */
+
+.app-header {
+  padding: 10px 20px 0px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  z-index: 5;
+  position: relative;
+}
+
+.floating-scene {
+  width: 100% !important;
+  height: 155px !important;
+
+  display: flex !important;
+
+  justify-content: center !important;
+  align-items: center !important;
+
+  margin-top: 15px !important;
+  margin-bottom: 0px !important;
+
+  position: relative;
+
+  z-index: 4;
+}
+
+.flying-dog-wrapper {
+  animation: superFloating 3.5s ease-in-out infinite !important;
+
+  display: flex !important;
+
+  justify-content: center !important;
+  align-items: center !important;
+
+  width: 100%;
+
+  position: relative;
+}
+
+.actual-logo-img {
+  width: 200px !important;
+  height: auto !important;
+
+  display: block !important;
+
+  margin: 0 auto !important;
+
+  cursor: pointer !important;
+
+  transition: transform 0.1s ease-in-out !important;
+}
+
+.actual-logo-img:active {
+  transform: scale(0.95) !important;
+}
+
+
+/* =========================================
+   ÜYE OL BUTONU
+   ========================================= */
+
+.register-hint {
+  position: absolute;
+
+  right: 35px;
+  top: 79px;
+
+  background-color: rgba(255, 255, 255, 0.95);
+
+  padding: 4px 8px;
+
+  border-radius: 12px;
+
+  font-size: 11px;
+  color: #333;
+
+  font-weight: 700;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+
+  display: flex;
+  align-items: center;
+
+  gap: 3px;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  transition: transform 0.2s;
+}
+
+.register-hint:hover {
+  transform: scale(1.08);
+  background-color: #fff;
+}
+
+
+/* =========================================
+   MOLLY.CO YAZISI
+   ========================================= */
+
+.brand-title {
+  font-family: 'Fredoka', sans-serif !important;
+
+  font-size: 44px !important;
+
+  color: #00bcd4 !important;
+
+  margin: -55px 0 5px 0 !important;
+
+  font-weight: 900 !important;
+
+  text-transform: lowercase;
+
+  letter-spacing: -1px !important;
+
+  display: inline-block;
+
+  position: relative;
+
+  text-shadow:
+    -3px -3px 0 #fff,
+    3px -3px 0 #fff,
+    -3px 3px 0 #fff,
+    3px 3px 0 #fff,
+    -4px 0px 0 #fff,
+    4px 0px 0 #fff,
+    0px -4px 0 #fff,
+    0px 4px 0 #fff,
+    5px 5px 0px rgba(0,0,0,0.07);
+}
+
+.sub-title {
+  margin: 0 0 10px 0;
+
+  font-size: 13px;
+
+  color: #a49663;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   MASAL LİSTESİ
+   ========================================= */
+
+.book-list {
+  padding: 12px;
+
+  flex: 1;
+
+  overflow-y: auto;
+
+  z-index: 3;
+
+  padding-bottom: 20px;
+}
+
+
+/* =========================================
+   MASAL KARTLARI
+   ========================================= */
+
+.book-card {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-radius: 14px;
+
+  padding: 10px 12px;
+
+  margin-bottom: 8px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.01);
+}
+
+.book-card:hover {
+  transform: scale(1.02);
+}
+
+.book-content-left {
+  display: flex;
+  align-items: center;
+}
+
+.book-icon {
+  font-size: 24px;
+  margin-right: 12px;
+}
+
+.book-info h3 {
+  margin: 0 0 2px 0;
+  font-size: 14px;
+}
+
+.book-info p {
+  margin: 0;
+  font-size: 11px;
+}
+
+.card-heart-badge {
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+
+/* =========================================
+   KART RENKLERİ
+   ========================================= */
+
+.card-pink {
+  background-color: #fff0f5 !important;
+  border: 2px solid #ffe3ec !important;
+}
+
+.card-pink .book-info h3 {
+  color: #ff6b81;
+}
+
+.card-pink .book-info p {
+  color: #cca0b0;
+}
+
+.card-orange {
+  background-color: #fff3e0 !important;
+  border: 2px solid #ffe0b2 !important;
+}
+
+.card-orange .book-info h3 {
+  color: #f57c00;
+}
+
+.card-orange .book-info p {
+  color: #ffb74d;
+}
+
+.card-blue {
+  background-color: #e3f2fd !important;
+  border: 2px solid #bbdefb !important;
+}
+
+.card-blue .book-info h3 {
+  color: #1976d2;
+}
+
+.card-blue .book-info p {
+  color: #64b5f6;
+}
+
+.card-green {
+  background-color: #f1f8e9 !important;
+  border: 2px solid #dcedc8 !important;
+}
+
+.card-green .book-info h3 {
+  color: #558b2f;
+}
+
+.card-green .book-info p {
+  color: #8bc34a;
+}
+
+
+/* =========================================
+   ALTTA AÇILAN MÜZİK ÇALAR
+   ========================================= */
+
+.player-panel {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 44%;
+
+  background: linear-gradient(180deg, #e3f2fd 0%, #ffecd2 100%);
+
+  border-top: 4px solid #00bcd4;
+
+  border-radius: 30px 30px 0 0;
+
+  padding: 10px 16px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  z-index: 15;
+
+  box-shadow: 0 -8px 20px rgba(0,0,0,0.15);
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.close-player-btn {
+  position: absolute;
+
+  top: 8px;
+  right: 15px;
+
+  background: rgba(255, 107, 129, 0.15);
+
+  color: #ff6b81;
+
+  border: none;
+
+  padding: 4px 9px;
+
+  border-radius: 8px;
+
+  font-size: 10px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  z-index: 5;
+}
+
+.close-player-btn:hover {
+  background: #ff6b81;
+  color: white;
+}
+
+
+/* =========================================
+   KAPAK FOTOĞRAFI
+   ========================================= */
+
+.player-cover-container {
+  width: 130px !important;
+  height: 130px !important;
+  min-height: 130px !important;
+
+  margin: 2px auto !important;
+
+  border-radius: 16px !important;
+
+  overflow: hidden !important;
+
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+
+  border: 3px solid #ffffff;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+#playing-cover {
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover !important;
+
+  display: block !important;
+}
+
+#playing-title {
+  color: #ff7c43;
+
+  font-family: 'Fredoka', sans-serif;
+
+  font-size: 14px !important;
+
+  line-height: 1.1 !important;
+
+  margin: 0 !important;
+
+  text-align: center;
+
+  max-height: 2.2em;
+
+  overflow: hidden;
+}
+
+#playing-desc {
+  color: #a49663;
+
+  font-size: 10px !important;
+
+  font-weight: bold;
+
+  margin: 0 !important;
+}
+
+
+/* =========================================
+   ÖZEL SES KONTROL ÇUBUĞU
+   ========================================= */
+
+.custom-audio-bar {
+  display: flex;
+
+  align-items: center;
+
+  background-color: #ffffff;
+
+  border-radius: 30px;
+
+  height: 38px;
+
+  width: 100%;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+  padding: 0 8px;
+
+  box-sizing: border-box;
+
+  gap: 6px;
+
+  flex-shrink: 0;
+
+  margin-bottom: 4px;
+}
+
+.custom-ctrl-btn {
+  background: transparent;
+
+  border: none;
+
+  color: #ff9f1c;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.2s;
+
+  flex-shrink: 0;
+
+  padding: 0;
+}
+
+.custom-ctrl-btn:hover {
+  transform: scale(1.15);
+}
+
+.custom-play-btn {
+  background: linear-gradient(135deg, #ff9f1c 0%, #2ec4b6 100%);
+
+  color: white;
+
+  border: none;
+
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition: transform 0.2s;
+
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+
+  flex-shrink: 0;
+
+  padding: 0;
+}
+
+.custom-play-btn:hover {
+  transform: scale(1.1);
+}
+
+.custom-progress-container {
+  flex: 1;
+
+  height: 5px;
+
+  background-color: #f0f0f0;
+
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.custom-progress-bar {
+  height: 100%;
+
+  width: 0%;
+
+  background: linear-gradient(90deg, #ff9f1c, #2ec4b6);
+
+  border-radius: 3px;
+
+  transition: width 0.1s linear;
+}
+
+.time-display {
+  font-size: 10px;
+
+  color: #888;
+
+  font-weight: 600;
+
+  min-width: 28px;
+
+  text-align: center;
+
+  flex-shrink: 0;
+}
+
+.fav-audio-btn {
+  background: transparent;
+
+  border: none;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  transition: transform 0.2s;
+
+  padding: 0;
+}
+
+.fav-audio-btn:hover {
+  transform: scale(1.2);
+}
+
+
+/* =========================================
+   GİZLİ ALANLAR
+   ========================================= */
+
+#audio-player.hidden {
+  transform: translateY(120%);
+  display: flex !important;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* =========================================
+   ÜYELİK MODALI
+   ========================================= */
+
+.modal-overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 20;
+}
+
+.modal-overlay.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #fff;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  width: 80%;
+  max-width: 280px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-content h3 {
+  margin-top: 0;
+
+  color: #00bcd4;
+
+  font-family: 'Fredoka', sans-serif;
+
+  font-size: 20px;
+
+  margin-bottom: 15px;
+}
+
+#register-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  width: 100%;
+}
+
+#register-form input {
+  padding: 10px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  outline: none;
+}
+
+#register-form input:focus {
+  border-color: #00bcd4;
+}
+
+.reg-submit-btn {
+  background-color: #00bcd4;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  margin-top: 5px;
+}
+
+.reg-submit-btn:hover {
+  background-color: #0097a7;
+}
+
+.close-btn {
+  background: none;
+
+  border: none;
+
+  color: #888;
+
+  margin-top: 10px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+
+/* =========================================
+   BALONLAR VE ANİMASYONLAR
+   ========================================= */
+
+.balloon-container {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+.balloon {
+  position: absolute;
+
+  bottom: -50px;
+
+  font-size: 28px;
+
+  animation: flyUp 9s linear infinite;
+
+  opacity: 0.5;
+}
+
+.balloon-blue {
+  left: 10%;
+
+  animation-delay: 0s;
+
+  animation-duration: 8s;
+
+  filter: hue-rotate(140deg);
+}
+
+.balloon-pink {
+  left: 32%;
+
+  animation-delay: 2.5s;
+
+  animation-duration: 11s;
+
+  filter: hue-rotate(290deg);
+}
+
+.balloon-green {
+  left: 55%;
+
+  animation-delay: 4.5s;
+
+  animation-duration: 7s;
+
+  filter: hue-rotate(60deg);
+}
+
+.balloon-purple {
+  left: 78%;
+
+  animation-delay: 1.2s;
+
+  animation-duration: 10s;
+
+  filter: hue-rotate(230deg);
+}
+
+.balloon-red {
+  left: 45%;
+
+  animation-delay: 6s;
+
+  animation-duration: 9s;
+}
+
+
+/* =========================================
+   BALON ANİMASYONU
+   ========================================= */
+
+@keyframes flyUp {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(-700px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================
+   LOGO UÇMA ANİMASYONU
+   ========================================= */
+
+@keyframes superFloating {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-8px) rotate(-1.5deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(0deg);
+  }
+
+  75% {
+    transform: translateY(-6px) rotate(1.5deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
