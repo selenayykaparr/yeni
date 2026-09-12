@@ -3,7 +3,7 @@
 // İnternetsiz ana ekran desteği
 // ==========================================
 
-const CACHE_NAME = "molly-co-v2";
+const CACHE_NAME = "molly-co-v3";
 
 const APP_SHELL = [
   "/",
