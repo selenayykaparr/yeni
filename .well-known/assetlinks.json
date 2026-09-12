@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "molly.co.co",
+      "sha256_cert_fingerprints": [
+        "87:9C:AC:E8:E5:A3:78:09:A0:DF:92:7E:D8:09:5D:ED:CD:55:F2:9C:32:C3:78:22:99:A9:C6:52:E4:62:41:B1"
+      ]
+    }
+  }
+]
